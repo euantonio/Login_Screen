@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça login ou crie sua conta</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/Teste/login.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6d8d2a141b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <main>
+        <!-- CONTAINER ESQUERDA -->
+        <div class="container-esquerda">
+            <div id="descricao">
+                <h1>Faça login.</h1>
+                <p>Você pode entrar com a sua conta<br>ou criar uma nova.</p>
+            </div>
+            <form>
+                <label>Digite o seu e-mail</label>
+                <input class="LoginField" type="email" placeholder="exemplo@gmail.com" maxlength="30">
+                <label>Digite a sua senha</label>
+                <input class="LoginField password" name="password" type="password" placeholder="Sua senha de 8 dígitos" maxlength="8">
+                <img id="olho" onclick="eyeClick()" src="eye.svg">
+                <input class="loginButton" type="submit" value="Entrar" onclick="clicar()">
+            </form>
+            <div class="password-redefine">
+                <a href="#" onclick="clicar()">Esqueceu sua senha?</a>
+            </div>
+            <div class="create-account">
+                <button id="criarConta" onclick="clicar()">Criar conta</button>
+            </div>
+        </div>
+        <!-- CONTAINER DIREITA -->
+        <div class="container-direita">
+
+        </div>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

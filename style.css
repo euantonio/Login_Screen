@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+:root {
+    --cor-padrão: #deba9a;
+    --padrão-escura: #896c60;
+}
+
+::-moz-selection {
+    background: var(--cor-padrão);
+    color: white;
+}
+
+::selection {
+    background: var(--cor-padrão);
+    color: white;
+}
+
+main {
+    display: flex;
+}
+
+.container-direita {
+    background: url(background.jpg) center center/cover;
+    height: 95vh;
+    width: 60%;
+    margin: 2.5vh;
+    border-radius: 30px;
+}
+
+.container-esquerda {
+    height: 100vh;
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#descricao {
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#descricao > p {
+    color: gray;
+}
+
+h1, p {
+    margin: 0.5em 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    height: 45px;
+    width: 25vw;
+    border-radius: 5px;
+    border: none;
+}
+
+
+#olho {
+    height: 20px;
+    width: fit-content;
+    position: relative;
+    top: -10%;
+    right: -90%;
+}
+
+.LoginField {
+    background-color: white;
+    outline: 2px solid rgb(235, 235, 235);
+    text-indent: 20px;
+    margin-top: 1em;
+    transition: 200ms ease;
+}
+
+.LoginField:focus {
+    outline: 2px solid var(--cor-padrão);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+.loginButton {
+    background-color: var(--cor-padrão);
+    color: white;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 2.5em;
+    transition: 200ms ease;
+}
+
+.loginButton:hover {
+    background-color: var(--padrão-escura);
+}
+
+.password-redefine {
+    font-weight: bold;
+    margin-top: 2em;
+}
+
+a {
+    text-decoration: none;
+    color: var(--padrão-escura);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#criarConta {
+    height: 45px;
+    width: 9vw;
+    border-radius: 30px;
+    border: none;
+    outline: 1.5px solid var(--cor-padrão);
+    background-color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    margin-top: 5em;
+    transition: 200ms ease;
+}
+
+#criarConta:hover {
+    width: 8vw;
+}
+
+/*VERSÃO CELULAR*/
+
+@media (max-width: 1200px) {
+    .container-direita {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+    }
+
+    input {
+        height: 45px;
+        width: 70vw;
+        border-radius: 5px;
+        border: none;
+    }
+
+    .container-esquerda {
+        height: 100vh;
+        width: auto;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #criarConta {
+        height: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+    }
+    
+    #criarConta:hover {
+        height: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: auto;
+    }
+}
+/*VERSÃO WIDESCREEN*/
+
+@media (min-width: 2000px) {
+    body {
+        margin: auto;
+        max-width: 1700px;
+    }
+
+    input {
+        height: 45px;
+        width: 500px;
+    }
+
+    #criarConta {
+        width: 200px;
+    }
+    
+    #criarConta:hover {
+        width: 180px;
+    }
+}
