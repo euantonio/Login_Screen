@@ -8,17 +8,17 @@
 }
 
 :root {
-    --cor-padrão: #deba9a;
-    --padrão-escura: #896c60;
+    --color-default: #deba9a;
+    --cor-escura: #896c60;
 }
 
 ::-moz-selection {
-    background: var(--cor-padrão);
+    background: var(--color-default);
     color: white;
 }
 
 ::selection {
-    background: var(--cor-padrão);
+    background: var(--color-default);
     color: white;
 }
 
@@ -87,7 +87,7 @@ input {
 }
 
 .LoginField:focus {
-    outline: 2px solid var(--cor-padrão);
+    outline: 2px solid var(--color-default);
 }
 
 label {
@@ -96,7 +96,7 @@ label {
 }
 
 .loginButton {
-    background-color: var(--cor-padrão);
+    background-color: var(--color-default);
     color: white;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -107,7 +107,7 @@ label {
 }
 
 .loginButton:hover {
-    background-color: var(--padrão-escura);
+    background-color: var(--cor-escura);
 }
 
 .password-redefine {
@@ -117,7 +117,7 @@ label {
 
 a {
     text-decoration: none;
-    color: var(--padrão-escura);
+    color: var(--cor-escura);
 }
 
 a:hover {
@@ -129,7 +129,7 @@ a:hover {
     width: 9vw;
     border-radius: 30px;
     border: none;
-    outline: 1.5px solid var(--cor-padrão);
+    outline: 1.5px solid var(--color-default);
     background-color: white;
     font-weight: bold;
     text-transform: uppercase;
